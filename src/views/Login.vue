@@ -2,8 +2,8 @@
   <div class="login">
     <el-row style="margin-top: 260px;z-index: 1;">
       <el-col :model="user" :offset="9" :span="5">
-        <el-card class="login-box">
-          <el-form v-loading="$store.state.loading">
+        <el-card class="login-box" v-loading="$store.state.loading" element-loading-background="rgba(0, 0, 0, 0.8)">
+          <el-form>
             <h1 class="title">欢迎使用</h1>
             <p class="login-box-msg">疾如风，徐如林!</p>
             <el-form-item>
