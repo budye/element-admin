@@ -27,7 +27,7 @@
                         <el-option v-for="tag in tagList" :key="tag.key" :label="tag.value" :value="tag.key"></el-option>
                     </el-select>
                 </el-form-item>
-                <el-form-item label="地址" prop="location">
+                <el-form-item label="地址" prop="address">
                     <el-cascader :options="locations" v-model="user.address" placeholder="请选择地址" clearable class="full-width"></el-cascader>
                 </el-form-item>
                 <el-form-item label="注册日期" prop="createDate">
@@ -107,7 +107,7 @@
                     age: [{required: true, message: '请输入年龄'}],
                     tags: [{type: 'array', required: true, message: '请至少选择一个标签', trigger: 'change'}],
                     tag: [{required: true, message: '请选择标签'}],
-                    location: [{required: true, message: '请选择地址'}],
+                    address: [{required: true, message: '请选择地址'}],
                     createDate: [{type: 'date', required: true, message: '请选择注册时间', trigger: 'change'}]
                 }
             };
