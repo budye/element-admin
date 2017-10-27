@@ -159,7 +159,7 @@ async-each@^1.0.0:
 
 async-validator@~1.8.1:
   version "1.8.1"
-  resolved "http://registry.npm.taobao.org/async-validator/download/async-validator-1.8.1.tgz#6665788ca39269af770e5ee02f0e557f2438d2ca"
+  resolved "https://registry.yarnpkg.com/async-validator/-/async-validator-1.8.1.tgz#6665788ca39269af770e5ee02f0e557f2438d2ca"
   dependencies:
     babel-runtime "6.x"
 
@@ -209,7 +209,7 @@ aws4@^1.2.1:
 
 axios@^0.17.0:
   version "0.17.0"
-  resolved "http://registry.npm.taobao.org/axios/download/axios-0.17.0.tgz#7da747916db803f761651d6091d708789b953c6a"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.0.tgz#7da747916db803f761651d6091d708789b953c6a"
   dependencies:
     follow-redirects "^1.2.3"
     is-buffer "^1.1.5"
@@ -372,7 +372,7 @@ babel-helper-replace-supers@^6.24.1:
 
 babel-helper-vue-jsx-merge-props@^2.0.0:
   version "2.0.2"
-  resolved "http://registry.npm.taobao.org/babel-helper-vue-jsx-merge-props/download/babel-helper-vue-jsx-merge-props-2.0.2.tgz#aceb1c373588279e2755ea1cfd35c22394fd33f8"
+  resolved "https://registry.yarnpkg.com/babel-helper-vue-jsx-merge-props/-/babel-helper-vue-jsx-merge-props-2.0.2.tgz#aceb1c373588279e2755ea1cfd35c22394fd33f8"
 
 babel-helpers@^6.24.1:
   version "6.24.1"
@@ -1416,7 +1416,7 @@ deep-extend@~0.4.0:
 
 deepmerge@^1.2.0:
   version "1.5.2"
-  resolved "http://registry.npm.taobao.org/deepmerge/download/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-1.5.2.tgz#10499d868844cdad4fee0842df8c7f6f0c95a753"
 
 defined@^1.0.0:
   version "1.0.0"
@@ -1525,9 +1525,9 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.24:
   version "1.3.27"
   resolved "http://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.27.tgz#78ecb8a399066187bb374eede35d9c70565a803d"
 
-element-ui@^2.0.0-beta.1:
-  version "2.0.0-beta.1"
-  resolved "http://registry.npm.taobao.org/element-ui/download/element-ui-2.0.0-beta.1.tgz#354096bc332871f9892d849d3fee69a96bc1c0b0"
+element-ui@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/element-ui/-/element-ui-2.0.0.tgz#439d1633f3c78a440c5ca9a9cb552905ddbd5097"
   dependencies:
     async-validator "~1.8.1"
     babel-helper-vue-jsx-merge-props "^2.0.0"
@@ -1868,7 +1868,7 @@ follow-redirects@^1.2.3:
 
 font-awesome@^4.7.0:
   version "4.7.0"
-  resolved "http://registry.npm.taobao.org/font-awesome/download/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
 
 for-in@^1.0.1:
   version "1.0.2"
@@ -4028,7 +4028,7 @@ tar@^2.2.1:
 
 throttle-debounce@^1.0.1:
   version "1.0.1"
-  resolved "http://registry.npm.taobao.org/throttle-debounce/download/throttle-debounce-1.0.1.tgz#dad0fe130f9daf3719fdea33dc36a8e6ba7f30b5"
+  resolved "https://registry.yarnpkg.com/throttle-debounce/-/throttle-debounce-1.0.1.tgz#dad0fe130f9daf3719fdea33dc36a8e6ba7f30b5"
 
 time-stamp@^2.0.0:
   version "2.0.0"
@@ -4238,13 +4238,13 @@ vue-loader@^13.3.0:
 
 vue-quill-editor@^2.3.3:
   version "2.3.3"
-  resolved "http://registry.npm.taobao.org/vue-quill-editor/download/vue-quill-editor-2.3.3.tgz#80770bbb19c41d2d78af98996bbd6173fba8f08e"
+  resolved "https://registry.yarnpkg.com/vue-quill-editor/-/vue-quill-editor-2.3.3.tgz#80770bbb19c41d2d78af98996bbd6173fba8f08e"
   dependencies:
     quill "^1.3.0"
 
 vue-router@^3.0.1:
   version "3.0.1"
-  resolved "http://registry.npm.taobao.org/vue-router/download/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
 
 vue-style-loader@^3.0.0, vue-style-loader@^3.0.1:
   version "3.0.3"
@@ -4266,11 +4266,11 @@ vue-template-es2015-compiler@^1.6.0:
 
 vue@^2.5.2:
   version "2.5.2"
-  resolved "http://registry.npm.taobao.org/vue/download/vue-2.5.2.tgz#fd367a87bae7535e47f9dc5c9ec3b496e5feb5a4"
+  resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.2.tgz#fd367a87bae7535e47f9dc5c9ec3b496e5feb5a4"
 
 vuex@^3.0.0:
   version "3.0.0"
-  resolved "http://registry.npm.taobao.org/vuex/download/vuex-3.0.0.tgz#98b4b5c4954b1c1c1f5b29fa0476a23580315814"
+  resolved "https://registry.yarnpkg.com/vuex/-/vuex-3.0.0.tgz#98b4b5c4954b1c1c1f5b29fa0476a23580315814"
 
 watchpack@^1.4.0:
   version "1.4.0"
