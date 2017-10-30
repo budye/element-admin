@@ -6,7 +6,7 @@
                     <h1>Admin</h1>
                 </div>
                 <div class="header-nav">
-                    <el-menu mode="horizontal" background-color="#2196F3" text-color="#ffffff" active-text-color="#ffffff" :router="true">
+                    <el-menu mode="horizontal" background-color="#1976D2" text-color="#ffffff" active-text-color="#ffffff" :router="true">
                         <el-submenu index="1">
                             <template slot="title"><span>消息</span>
                                 <el-badge :value="3"/>
