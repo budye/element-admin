@@ -140,6 +140,7 @@
       },
       deleteRow(row) {
         console.log(row);
+        this.query();
       },
       onSelectionChange(rows) {
         this.selectedRows = rows.map(item => item.id);
