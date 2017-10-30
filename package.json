@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "axios": "^0.17.0",
-    "element-ui": "^2.0.0",
+    "element-ui": "^2.0.1",
     "font-awesome": "^4.7.0",
     "vue": "^2.5.2",
     "vue-quill-editor": "^2.3.3",

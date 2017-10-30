@@ -15,7 +15,7 @@
                     <el-input v-model="user.realName"></el-input>
                 </el-form-item>
                 <el-form-item label="年龄" prop="age">
-                    <el-input-number v-model="user.age" :min="1" :max="200" class="full-width"></el-input-number>
+                    <el-input-number v-model="user.age" :min="1" :max="200" class="full-width" controls-position="right"></el-input-number>
                 </el-form-item>
                 <el-form-item label="标签多选" prop="tags">
                     <el-select v-model="user.tags" multiple placeholder="请选择标签" class="full-width">
