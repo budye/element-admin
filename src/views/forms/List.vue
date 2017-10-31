@@ -5,7 +5,7 @@
       <el-col :span="20">
         <el-breadcrumb separator="/">
           <el-breadcrumb-item>增删改查</el-breadcrumb-item>
-          <el-breadcrumb-item>列表</el-breadcrumb-item>
+          <el-breadcrumb-item>查询</el-breadcrumb-item>
         </el-breadcrumb>
       </el-col>
     </el-row>
@@ -14,10 +14,10 @@
         <el-card>
           <el-form>
             <el-form-item label="关键词">
-              <el-input placeholder="关键词" v-model="criteria.q"></el-input>
+              <el-input placeholder="关键词" v-model="criteria.q" suffix-icon="el-icon-search"></el-input>
             </el-form-item>
             <el-form-item label="标签">
-              <el-input placeholder="标签" v-model="criteria.tag"></el-input>
+              <el-input placeholder="标签" v-model="criteria.tag" suffix-icon="el-icon-search"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="query">查询</el-button>
