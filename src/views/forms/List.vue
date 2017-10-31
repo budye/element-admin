@@ -119,9 +119,9 @@
       query() {
         var self = this;
         self.$store.dispatch('Loading', true);
-        self.$http.get('/api/movie/search?q=' + self.criteria.q + '&tag=' + self.criteria.tag + '&start=' + (self.criteria.pageNo * self.criteria.pageSize) + '&count=' + self.criteria.pageSize).then(function (res) {
+        var start = self.criteria.pageNo * self.criteria.pageSize;
+        self.$http.get('/api/movie/search?q=' + self.criteria.q + '&tag=' + self.criteria.tag + '&start=' + start + '&count=' + self.criteria.pageSize).then(function (res) {
           self.movieList = res.data.subjects;
-          self.criteria.pageNo = res.data.start;
           self.criteria.total = res.data.total;
           self.$store.dispatch('Loading', false);
         }).catch(function () {
@@ -130,7 +130,6 @@
         );
       },
       currentChange(pageNo) {
-        this.criteria.pageNo = pageNo;
         this.query();
       },
       pageSizeChange(pageSize) {
