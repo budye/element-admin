@@ -7,10 +7,10 @@
             <h1 class="title">欢迎使用</h1>
             <p class="login-box-msg">疾如风，徐如林!</p>
             <el-form-item>
-              <el-input type="text" v-model="user.userName" icon="fa-user-o" auto-complete="off" placeholder="请输入用户名..."></el-input>
+              <el-input type="text" v-model="user.userName" icon="fa-user-o" auto-complete="off" placeholder="请输入用户名..." suffix-icon="fa fa-user"></el-input>
             </el-form-item>
             <el-form-item>
-              <el-input type="password" v-model="user.password" icon="fa-lock" auto-complete="off" placeholder="请输入密码..."></el-input>
+              <el-input type="password" v-model="user.password" icon="fa-lock" auto-complete="off" placeholder="请输入密码..." suffix-icon="fa fa-lock"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="login" :loading="$store.state.loading" class="pull-right">登录</el-button>
