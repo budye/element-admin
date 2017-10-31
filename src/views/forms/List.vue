@@ -104,7 +104,7 @@
     name: "List",
     data() {
       return {
-        criteria: {q: '特工', tag: '', pageNo: 1, pageSize: 15, total: 100},
+        criteria: {q: '特工', tag: '', pageNo: 1, pageSize: 15, total: 0},
         movieList: [],
         selectedRows: [],
         showAdd: false,
@@ -119,13 +119,15 @@
       query() {
         var self = this;
         self.$store.dispatch('Loading', true);
-        self.$http.get('/api/movie/search?q=' + self.criteria.q + '&tag=' + self.criteria.tag + '&start=' + self.criteria.pageNo + '&count=' + self.criteria.pageSize).then(function (res) {
+        self.$http.get('/api/movie/search?q=' + self.criteria.q + '&tag=' + self.criteria.tag + '&start=' + (self.criteria.pageNo * self.criteria.pageSize) + '&count=' + self.criteria.pageSize).then(function (res) {
           self.movieList = res.data.subjects;
           self.criteria.pageNo = res.data.start;
-          self.criteria.pageSize = res.data.count;
           self.criteria.total = res.data.total;
           self.$store.dispatch('Loading', false);
-        });
+        }).catch(function () {
+            self.$store.dispatch('Loading', false);
+          }
+        );
       },
       currentChange(pageNo) {
         this.criteria.pageNo = pageNo;
