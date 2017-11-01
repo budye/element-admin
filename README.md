@@ -31,5 +31,6 @@ npm run build --report
 ## Screenshot
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Login.png)
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Dashboard.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Profile.png)
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Form.png)
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Query.png)
