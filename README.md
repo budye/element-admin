@@ -1,12 +1,22 @@
 # element-admin
 
-> A Vue.js project
+> Admin template(SPA) based on vue2 and element2
+
+## Package included:
+* vue
+* vuex
+* vue-router
+* element-ui
+* font-awesome(optional)
+* vue-quill-editor(optional)
+* axios(optional)
+* echarts(optional)
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-npm install
+npm install or yarn
 
 # serve with hot reload at localhost:8080
 npm run dev
@@ -18,4 +28,8 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Screenshot
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Login.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Dashboard.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Form.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Query.png)
