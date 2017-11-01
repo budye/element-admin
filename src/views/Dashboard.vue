@@ -12,26 +12,96 @@
     <el-row :gutter="20">
       <el-col :span="6">
         <el-card>
-          <div style="height:450px;">
-            <span>haha</span>
+          <el-row>
+            <el-col>
+              <h3>10</h3>
+              <p class="text-muted"><i class="fa fa-fw fa-plus"></i> 新任务</p>
+            </el-col>
+            <el-col>
+              <el-progress :percentage="10"></el-progress>
+            </el-col>
+          </el-row>
+        </el-card>
+      </el-col>
+      <el-col :span="6">
+        <el-card>
+          <el-row>
+            <el-col>
+              <h3>15</h3>
+              <p class="text-muted"><i class="fa fa-fw fa-pause"></i> 已挂起</p>
+            </el-col>
+            <el-col>
+              <el-progress :percentage="15"></el-progress>
+            </el-col>
+          </el-row>
+        </el-card>
+      </el-col>
+      <el-col :span="6">
+        <el-card>
+          <el-row>
+            <el-col>
+              <h3>70</h3>
+              <p class="text-muted"><i class="fa fa-fw fa-check"></i> 已完成</p>
+            </el-col>
+            <el-col>
+              <el-progress :percentage="70"></el-progress>
+            </el-col>
+          </el-row>
+        </el-card>
+      </el-col>
+      <el-col :span="6">
+        <el-card>
+          <el-row>
+            <el-col>
+              <h3>5</h3>
+              <p class="text-muted"><i class="fa fa-fw fa-hand-paper-o"></i> 已终止</p>
+            </el-col>
+            <el-col>
+              <el-progress :percentage="5"></el-progress>
+            </el-col>
+          </el-row>
+        </el-card>
+      </el-col>
+    </el-row>
+    <br>
+    <el-row :gutter="20">
+      <el-col :span="6">
+        <el-card>
+          <div id="pieChart" style="width:100%;height:450px;">
           </div>
         </el-card>
       </el-col>
       <el-col :span="18">
         <el-card>
-          <div id="main" style="width:100%;height:450px;">
+          <div id="lineChart" style="width:100%;height:450px;">
           </div>
         </el-card>
       </el-col>
     </el-row>
     <br>
     <el-row :gutter="20">
-      <el-col :span="12">
+      <el-col :span="24">
         <el-card>
-          <el-table :data="tableData" style="width: 100%">
-            <el-table-column prop="date" label="日期" width="180"></el-table-column>
-            <el-table-column prop="name" label="姓名" width="180"></el-table-column>
-            <el-table-column prop="address" label="地址"></el-table-column>
+          <el-table :data="userList" style="width: 100%">
+            <el-table-column label="姓名">
+              <template slot-scope="scope">
+                <el-col :span="6"><img src="../assets/avatar.png" style="width:80px;"></el-col>
+                <el-col :span="18">
+                  <p>{{scope.row.name}}</p>
+                  <p>{{scope.row.job}}</p>
+                </el-col>
+              </template>
+            </el-table-column>
+            <el-table-column label="优先级">
+              <template slot-scope="scope">
+                <el-tag>{{scope.row.priority}}</el-tag>
+              </template>
+            </el-table-column>
+            <el-table-column label="薪资">
+              <template slot-scope="scope">
+                <span>￥{{scope.row.salary}}</span>
+              </template>
+            </el-table-column>
           </el-table>
         </el-card>
       </el-col>
@@ -45,27 +115,11 @@
     name: "Dashboard",
     data() {
       return {
-        tableData: [{
-          date: '2016-05-02',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1518 弄'
-        }, {
-          date: '2016-05-04',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1517 弄'
-        }, {
-          date: '2016-05-01',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1519 弄'
-        }, {
-          date: '2016-05-03',
-          name: '王小虎',
-          address: '上海市普陀区金沙江路 1516 弄'
-        }]
+        userList: [{name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}]
       }
     },
     mounted: function () {
-      var myChart = echarts.init(document.getElementById('main'));
+      var myChart = echarts.init(document.getElementById('lineChart'));
       var option = {
         title: {
           text: '渠道分析'
@@ -130,6 +184,53 @@
       };
 
       myChart.setOption(option);
+
+      var myPieChart = echarts.init(document.getElementById('pieChart'));
+      var option1 = {
+        tooltip: {
+          trigger: 'item',
+          formatter: "{a} <br/>{b}: {c} ({d}%)"
+        },
+        legend: {
+          orient: 'vertical',
+          x: 'left',
+          data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+        },
+        series: [
+          {
+            name:'访问来源',
+            type:'pie',
+            radius: ['50%', '70%'],
+            avoidLabelOverlap: false,
+            label: {
+              normal: {
+                show: false,
+                position: 'center'
+              },
+              emphasis: {
+                show: true,
+                textStyle: {
+                  fontSize: '30',
+                  fontWeight: 'bold'
+                }
+              }
+            },
+            labelLine: {
+              normal: {
+                show: false
+              }
+            },
+            data:[
+              {value:335, name:'直接访问'},
+              {value:310, name:'邮件营销'},
+              {value:234, name:'联盟广告'},
+              {value:135, name:'视频广告'},
+              {value:1548, name:'搜索引擎'}
+            ]
+          }
+        ]
+      };
+      myPieChart.setOption(option1);
     }
   }
 </script>
