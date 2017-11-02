@@ -1,6 +1,6 @@
 # element-admin
 
-> Admin template(SPA) based on vue2 and element2
+> Admin template(SPA) based on vue2 and element-ui2
 
 ## Package included:
 * vue
