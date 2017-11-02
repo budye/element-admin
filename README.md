@@ -29,7 +29,7 @@ npm run build --report
 ```
 
 ### Contact
-\UE428 QQ群(PowerTeam) 466234012
+:two_men_holding_hands: QQ群(PowerTeam) 466234012
 
 ## Screenshot
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Login.png)
