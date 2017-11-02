@@ -29,7 +29,7 @@ npm run build --report
 ```
 
 ### Contact :family:
-:family: QQ群(PowerTeam) 466234012
+QQ群(PowerTeam) 466234012
 
 ## Screenshot
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Login.png)
@@ -38,6 +38,6 @@ npm run build --report
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Form.png)
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Query.png)
 
-## Donation
+## Donation :moneybag:
 If you find Element useful, you can buy us a cup of coffee
 ![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Pay.png) 
