@@ -40,4 +40,4 @@ QQ群(PowerTeam) 466234012
 
 ## Donation :moneybag:
 If you find Element useful, you can buy us a cup of coffee
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Pay.png) 
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Pay.png)

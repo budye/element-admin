@@ -1,236 +1,255 @@
 <template>
-  <div>
-    <el-row class="breadcrumb">
-      <el-col :span="4"><h3>Dashboard</h3></el-col>
-      <el-col :span="20">
-        <el-breadcrumb separator="/">
-          <el-breadcrumb-item>首页</el-breadcrumb-item>
-          <el-breadcrumb-item>Dashboard</el-breadcrumb-item>
-        </el-breadcrumb>
-      </el-col>
-    </el-row>
-    <el-row :gutter="20">
-      <el-col :span="6">
-        <el-card>
-          <el-row>
-            <el-col>
-              <h3>10</h3>
-              <p class="text-muted"><i class="fa fa-fw fa-plus"></i> 新任务</p>
+    <div>
+        <el-row :gutter="20">
+            <el-col :span="6">
+                <el-card>
+                    <div slot="header">
+                        <span>本周新用户</span>
+                    </div>
+                    <div>
+                        <div id="userChart" style="font-size: 30px">324</div>
+                    </div>
+                    <div>
+                        <span>日新增 32</span>
+                    </div>
+                </el-card>
             </el-col>
-            <el-col>
-              <el-progress :percentage="10"></el-progress>
+            <el-col :span="6">
+                <el-card>
+                    <div slot="header">
+                        <span>本周UV</span>
+                    </div>
+                    <div>
+                        <div id="uvChart" style="font-size: 30px">5325</div>
+                    </div>
+                    <div>
+                        <span>日新增 180</span>
+                    </div>
+                </el-card>
             </el-col>
-          </el-row>
-        </el-card>
-      </el-col>
-      <el-col :span="6">
-        <el-card>
-          <el-row>
-            <el-col>
-              <h3>15</h3>
-              <p class="text-muted"><i class="fa fa-fw fa-pause"></i> 已挂起</p>
+            <el-col :span="6">
+                <el-card>
+                    <div slot="header">
+                        <span>本周PV</span>
+                    </div>
+                    <div>
+                        <div id="pvChart" style="font-size: 30px">96546</div>
+                    </div>
+                    <div>
+                        <span>转化率 78%</span>
+                    </div>
+                </el-card>
             </el-col>
-            <el-col>
-              <el-progress :percentage="15"></el-progress>
+            <el-col :span="6">
+                <el-card>
+                    <div slot="header">
+                        <span>本周订单</span>
+                    </div>
+                    <div>
+                        <div id="orderChart" style="font-size: 30px">¥ 645435</div>
+                    </div>
+                    <div>
+                        <span>日新增 6</span>
+                    </div>
+                </el-card>
             </el-col>
-          </el-row>
-        </el-card>
-      </el-col>
-      <el-col :span="6">
-        <el-card>
-          <el-row>
-            <el-col>
-              <h3>70</h3>
-              <p class="text-muted"><i class="fa fa-fw fa-check"></i> 已完成</p>
+        </el-row>
+        <el-row :gutter="20">
+            <el-col :span="18">
+                <el-card>
+                    <div slot="header">
+                        <span>动态</span>
+                    </div>
+                    <el-row v-for="n in 10" :key="n">
+                        <el-col :span="20">张三 新建了项目 <span class="text-primary">Element Admin</span></el-col>
+                        <el-col :span="4" class="text-info"> 2018-3-1 13:43</el-col>
+                    </el-row>
+                </el-card>
             </el-col>
-            <el-col>
-              <el-progress :percentage="70"></el-progress>
+            <el-col :span="6">
+                <el-row>
+                    <el-col>
+                        <el-card>
+                            <div slot="header">
+                                <span>热销商品</span>
+                            </div>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 302</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 102</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 59</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 1239</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 1239</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 302</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 102</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 59</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 1239</el-tag>
+                            </div>
+                            <hr>
+                            <div class="text-primary">2018新款韩版潮流男士夏装丅恤上衣服
+                                <el-tag type="danger" size="mini" class="float-right">¥ 1239</el-tag>
+                            </div>
+                        </el-card>
+                    </el-col>
+                </el-row>
             </el-col>
-          </el-row>
-        </el-card>
-      </el-col>
-      <el-col :span="6">
-        <el-card>
-          <el-row>
-            <el-col>
-              <h3>5</h3>
-              <p class="text-muted"><i class="fa fa-fw fa-hand-paper-o"></i> 已终止</p>
-            </el-col>
-            <el-col>
-              <el-progress :percentage="5"></el-progress>
-            </el-col>
-          </el-row>
-        </el-card>
-      </el-col>
-    </el-row>
-    <br>
-    <el-row :gutter="20">
-      <el-col :span="6">
-        <el-card>
-          <div id="pieChart" style="width:100%;height:450px;">
-          </div>
-        </el-card>
-      </el-col>
-      <el-col :span="18">
-        <el-card>
-          <div id="lineChart" style="width:100%;height:450px;">
-          </div>
-        </el-card>
-      </el-col>
-    </el-row>
-    <br>
-    <el-row :gutter="20">
-      <el-col :span="24">
-        <el-card>
-          <el-table :data="userList" style="width: 100%">
-            <el-table-column label="姓名">
-              <template slot-scope="scope">
-                <el-col :span="6"><img src="../assets/avatar.png" style="width:80px;"></el-col>
-                <el-col :span="18">
-                  <p>{{scope.row.name}}</p>
-                  <p>{{scope.row.job}}</p>
-                </el-col>
-              </template>
-            </el-table-column>
-            <el-table-column label="优先级">
-              <template slot-scope="scope">
-                <el-tag>{{scope.row.priority}}</el-tag>
-              </template>
-            </el-table-column>
-            <el-table-column label="薪资">
-              <template slot-scope="scope">
-                <span>￥{{scope.row.salary}}</span>
-              </template>
-            </el-table-column>
-          </el-table>
-        </el-card>
-      </el-col>
-    </el-row>
-  </div>
+        </el-row>
+    </div>
 </template>
-<script>
-  import echarts from 'echarts'
-
-  export default {
-    name: "Dashboard",
-    data() {
-      return {
-        userList: [{name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}, {name: '张三', priority: '高', salary: 5000, job: 'Web Designer'}]
-      }
-    },
-    mounted: function () {
-      var myChart = echarts.init(document.getElementById('lineChart'));
-      var option = {
-        title: {
-          text: '渠道分析'
-        },
-        tooltip: {
-          trigger: 'axis'
-        },
-        legend: {
-          data: ['邮件营销', '联盟广告', '视频广告', '直接访问', '搜索引擎']
-        },
-        grid: {
-          left: '3%',
-          right: '4%',
-          bottom: '3%',
-          containLabel: true
-        },
-        toolbox: {
-          feature: {
-            saveAsImage: {}
-          }
-        },
-        xAxis: {
-          type: 'category',
-          boundaryGap: false,
-          data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日']
-        },
-        yAxis: {
-          type: 'value'
-        },
-        series: [
-          {
-            name: '邮件营销',
-            type: 'line',
-            stack: '总量',
-            data: [120, 132, 101, 134, 90, 230, 210]
-          },
-          {
-            name: '联盟广告',
-            type: 'line',
-            stack: '总量',
-            data: [220, 182, 191, 234, 290, 330, 310]
-          },
-          {
-            name: '视频广告',
-            type: 'line',
-            stack: '总量',
-            data: [150, 232, 201, 154, 190, 330, 410]
-          },
-          {
-            name: '直接访问',
-            type: 'line',
-            stack: '总量',
-            data: [320, 332, 301, 334, 390, 330, 320]
-          },
-          {
-            name: '搜索引擎',
-            type: 'line',
-            stack: '总量',
-            data: [820, 932, 901, 934, 1290, 1330, 1320]
-          }
-        ]
-      };
-
-      myChart.setOption(option);
-
-      var myPieChart = echarts.init(document.getElementById('pieChart'));
-      var option1 = {
-        tooltip: {
-          trigger: 'item',
-          formatter: "{a} <br/>{b}: {c} ({d}%)"
-        },
-        legend: {
-          orient: 'vertical',
-          x: 'left',
-          data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
-        },
-        series: [
-          {
-            name:'访问来源',
-            type:'pie',
-            radius: ['50%', '70%'],
-            avoidLabelOverlap: false,
-            label: {
-              normal: {
-                show: false,
-                position: 'center'
-              },
-              emphasis: {
-                show: true,
-                textStyle: {
-                  fontSize: '30',
-                  fontWeight: 'bold'
-                }
-              }
-            },
-            labelLine: {
-              normal: {
-                show: false
-              }
-            },
-            data:[
-              {value:335, name:'直接访问'},
-              {value:310, name:'邮件营销'},
-              {value:234, name:'联盟广告'},
-              {value:135, name:'视频广告'},
-              {value:1548, name:'搜索引擎'}
-            ]
-          }
-        ]
-      };
-      myPieChart.setOption(option1);
-    }
+<style lang="scss">
+.el-row {
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
   }
+}
+</style>
+<script>
+import G2 from "@antv/g2";
+
+export default {
+  name: "Dashboard",
+  data() {
+    return {
+      data: [
+        {
+          date: "2018-1-1",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-2",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-3",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-4",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-5",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-6",
+          value: Math.ceil(Math.random() * 10)
+        },
+        {
+          date: "2018-1-7",
+          value: Math.ceil(Math.random() * 10)
+        }
+      ],
+      userChart: null,
+      uvChart: null,
+      pvChart: null,
+      orderChart: null
+    };
+  },
+  methods: {
+    drawUserChart: function() {
+      this.userChart = new G2.Chart({
+        container: "userChart",
+        forceFit: true,
+        height: 100,
+        padding: [40, 0, 0, 0]
+      });
+      this.userChart.source(this.data);
+      this.userChart.scale({
+        date: {
+          type: "time",
+          alias: "日期"
+        }
+      });
+      this.userChart.area().position("date*value");
+      this.userChart
+        .line()
+        .position("date*value")
+        .size(2);
+      this.userChart.render();
+    },
+    drawUvChart: function() {
+      this.uvChart = new G2.Chart({
+        container: "uvChart",
+        forceFit: true,
+        height: 100,
+        padding: [40, 0, 0, 0]
+      });
+      this.uvChart.source(this.data);
+      this.uvChart.scale({
+        date: {
+          type: "time",
+          alias: "日期"
+        }
+      });
+      this.uvChart.interval().position("date*value");
+      //this.uvChart.axis(false);
+      this.uvChart.render();
+    },
+    drawPvChart: function() {
+      this.pvChart = new G2.Chart({
+        container: "pvChart",
+        forceFit: true,
+        height: 100,
+        padding: [40, 0, 0, 0]
+      });
+      this.pvChart.source(this.data);
+      this.pvChart.scale({
+        date: {
+          type: "time",
+          alias: "日期"
+        }
+      });
+      this.pvChart.line().position("date*value");
+      this.pvChart.render();
+    },
+    drawOrderChart: function() {
+      this.orderChart = new G2.Chart({
+        container: "orderChart",
+        forceFit: true,
+        height: 100,
+        padding: [40, 0, 0, 0]
+      });
+      this.orderChart.source(this.data);
+      this.orderChart.scale({
+        date: {
+          type: "time",
+          alias: "日期"
+        }
+      });
+      this.orderChart.interval().position("date*value");
+      this.orderChart.render();
+    }
+  },
+  mounted() {
+    this.drawUserChart();
+    this.drawUvChart();
+    this.drawPvChart();
+    this.drawOrderChart();
+  }
+};
 </script>

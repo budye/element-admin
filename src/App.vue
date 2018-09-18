@@ -1,9 +1,9 @@
 <template>
-  <router-view id="app"></router-view>
+  <router-view id="app"/>
 </template>
 
 <script>
-  export default {
-    name: 'app'
-  }
+export default {
+  name: "App"
+};
 </script>
