@@ -18,7 +18,7 @@
 # install dependencies
 npm install or yarn
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8081
 npm run serve
 
 # build for production with minification
