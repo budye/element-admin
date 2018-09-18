@@ -23,6 +23,7 @@ npm run serve
 
 # build for production with minification
 npm run build
+```
 
 ### Contact :family:
 QQ群(PowerTeam) 466234012
