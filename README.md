@@ -1,16 +1,16 @@
 # element-admin
 
-> Admin template(SPA) based on vue2 and element-ui2
+> Admin template(SPA) based on vue and element-ui
 
 ## Package included:
 * vue
 * vuex
 * vue-router
 * element-ui
-* font-awesome(optional)
-* vue-quill-editor(optional)
+* lodash
+* moment(optional)
 * axios(optional)
-* echarts(optional)
+* G2(optional)
 
 ## Build Setup
 
@@ -19,24 +19,21 @@
 npm install or yarn
 
 # serve with hot reload at localhost:8080
-npm run dev
+npm run serve
 
 # build for production with minification
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
 
 ### Contact :family:
 QQ群(PowerTeam) 466234012
 
 ## Screenshot
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Login.png)
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Dashboard.png)
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Profile.png)
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Form.png)
-![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/Query.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/login.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/dashboard.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/list.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/form.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/setting.png)
+![image](https://raw.githubusercontent.com/wiki/yupeng957/element-admin/sidebar.png)
 
 ## Donation :moneybag:
 If you find Element useful, you can buy us a cup of coffee
