@@ -10,7 +10,7 @@
 * vue-router
 * element-ui
 * lodash
-* mockjs
+* mockjs(optional)
 * moment(optional)
 * axios(optional)
 * G2(optional)
