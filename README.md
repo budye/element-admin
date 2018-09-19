@@ -1,6 +1,8 @@
 # element-admin
 
-> Admin template(SPA) based on vue and element-ui
+> **Lightweight** admin template based on vue and element-ui
+
+> Inspired by [Ant Design Pro](https://github.com/ant-design/ant-design-pro/)
 
 ## Package included:
 * vue
